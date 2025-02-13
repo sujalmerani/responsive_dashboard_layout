@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Sidebar -->
+    <aside class="fixed inset-y-0 left-0 bg-white w-64 transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800">Dashboard</h2>
+        </div>
+        <nav class="p-6 space-y-2">
+            <a href="#" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-600 font-medium">Overview</a>
+            <a href="#" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Analytics</a>
+            <a href="#" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Reports</a>
+            <a href="#" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50">Settings</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="md:ml-64 min-h-screen">
+        <!-- Top Navigation -->
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <button class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <div class="flex items-center">
+                        <span class="text-gray-600">Sujal Merani</span>
+                        <img src="https://thehexatech.com/static/media/images/sujal.jpg" alt="Profile" class="ml-3 h-8 w-8 rounded-full"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-gray-500 text-sm font-medium">Total Users</h3>
+                    <p class="text-3xl font-bold text-gray-900 mt-2">12,345</p>
+                    <div class="flex items-center text-green-500 text-sm mt-2">
+                        <span>↑ 12%</span>
+                        <span class="ml-1">vs last month</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-gray-500 text-sm font-medium">Revenue</h3>
+                    <p class="text-3xl font-bold text-gray-900 mt-2">$34,567</p>
+                    <div class="flex items-center text-green-500 text-sm mt-2">
+                        <span>↑ 8%</span>
+                        <span class="ml-1">vs last month</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-gray-500 text-sm font-medium">Active Projects</h3>
+                    <p class="text-3xl font-bold text-gray-900 mt-2">23</p>
+                    <div class="flex items-center text-red-500 text-sm mt-2">
+                        <span>↓ 2%</span>
+                        <span class="ml-1">vs last month</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-gray-500 text-sm font-medium">Task Completion</h3>
+                    <p class="text-3xl font-bold text-gray-900 mt-2">87%</p>
+                    <div class="flex items-center text-green-500 text-sm mt-2">
+                        <span>↑ 5%</span>
+                        <span class="ml-1">vs last month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="bg-white rounded-lg shadow mb-8">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-lg font-medium text-gray-900">Recent Activity</h2>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <img src="https://xsgames.co/randomusers/assets/avatars/male/63.jpg" alt="User" class="h-10 w-10 rounded-full"/>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-900">Jane Smith completed Project Alpha</p>
+                                <p class="text-sm text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://xsgames.co/randomusers/assets/avatars/male/69.jpg" alt="User" class="h-10 w-10 rounded-full"/>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-900">Mike Johnson added new task</p>
+                                <p class="text-sm text-gray-500">4 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://xsgames.co/randomusers/assets/avatars/female/0.jpg" alt="User" class="h-10 w-10 rounded-full"/>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-900">Sarah Wilson updated documentation</p>
+                                <p class="text-sm text-gray-500">6 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
